@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mahmoud.bs_sidebar.profile.Signup">
+
+
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/FnameID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="First Name" />
+        <EditText
+            android:id="@+id/LnameID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/FnameID" android:text="Last Name" />
+        <EditText
+            android:id="@+id/AgeID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/LnameID" android:text="Age" />
+        <EditText
+            android:id="@+id/EmailID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/AgeID" android:text="Email" />
+        <EditText android:id="@+id/PasswordID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/EmailID" android:text="Password" />
+        <EditText android:id="@+id/ReenterPasswordID" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_below="@id/PasswordID" android:text="Re-Enter Password" />
+        <Button
+            android:id="@+id/ButtonID" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/ReenterPasswordID" android:text="Register"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

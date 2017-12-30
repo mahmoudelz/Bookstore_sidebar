@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="544dp"
+        tools:layout_editor_absoluteX="0dp">
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="596dp"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/searchText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignParentStart="true"
+
+            android:layout_toStartOf="@+id/button2"
+            android:text="Search book , author..." />
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="Search" />
+
+        <TextView
+            android:id="@+id/catText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/searchButton"
+            android:layout_marginTop="48dp"
+            android:text="Categories"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton"
+            android:text="Business" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton4"
+            android:text="Children" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioButton"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/catText"
+            android:text="Reglion" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioButton3"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton3"
+            android:text="Art"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="-59dp" />
+
+        <TextView
+            android:id="@+id/laguageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton3"
+            android:layout_marginTop="60dp"
+            android:text="Languages"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioButton5"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/laguageText"
+            android:text="English" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioButton2"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton6"
+            android:text="French" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioButton2"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/radioButton2"
+            android:text="Arabic" />
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

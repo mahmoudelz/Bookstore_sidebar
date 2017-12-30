@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="139dp"
+        android:layout_height="134dp"
+        app:srcCompat="@color/colorAccent"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="89dp"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="91dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginEnd="83dp"
+        android:layout_marginRight="83dp"
+        android:text="Book Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookname"
+        android:layout_alignStart="@+id/bookname"
+        android:layout_below="@+id/bookname"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="40dp"
+        android:text="Author Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/bookdescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Description"
+        android:textSize="28sp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignRight="@+id/authorName"
+        android:layout_alignEnd="@+id/authorName" />
+
+    <Button
+        android:id="@+id/addtowish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bookdescription"
+        android:layout_alignStart="@+id/bookdescription"
+        android:layout_below="@+id/bookdescription"
+        android:layout_marginTop="43dp"
+        android:text="Add to wishlist" />
+
+    <Button
+        android:id="@+id/addtocart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/bookdescription"
+        android:layout_alignRight="@+id/bookdescription"
+        android:layout_alignTop="@+id/addtowish"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Add to cart" />
+
+
+</RelativeLayout>
+
